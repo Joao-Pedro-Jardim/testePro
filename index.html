@@ -7,9 +7,15 @@
 </head>
 <body>
     <h1>teste</h1>
+    <button>Copiar texto</button>
 </body>
 
 <script>
     console.log(window.isSecureContext)
+
+    const button = document.querySelector("button")
+    button.addEventListener('click', () => {
+        window.navigator.clipboard.writeText('não deu certo')
+    })
 </script>
 </html>
